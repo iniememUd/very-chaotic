@@ -1,23 +1,12 @@
 version: '3'
+
 services:
   frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
+    image: ehmeeudosen/frontend-chaos:${GIT_COMMIT_HASH}
     ports:
-      - "3000:80"  # Serve React app on port 3000
-    networks:
-      - app-network
+      - "80:80"
 
   backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
+    image: ehmeeudosen/backend-chaos:${GIT_COMMIT_HASH}
     ports:
-      - "5000:5000"  # Serve Flask app on port 5000
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge
+      - "5000:5000"

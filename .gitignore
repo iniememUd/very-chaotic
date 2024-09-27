@@ -12,3 +12,5 @@ docker-compose.override.yaml
 docker-compose.override.yml.save
 docker-compose.override.yaml.save
 docker-compose.yml.save
+
+.vscode/
