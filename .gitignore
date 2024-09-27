@@ -1,0 +1,14 @@
+node_modules
+venv/
+
+# Dependency directories
+frontend/node_modules/
+backend/__pycache__/
+
+# Docker
+*.log
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.override.yml.save
+docker-compose.override.yaml.save
+docker-compose.yml.save
