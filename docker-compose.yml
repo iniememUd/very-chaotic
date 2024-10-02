@@ -2,11 +2,13 @@ version: '3'
 
 services:
   frontend:
-    image: ehmeeudosen/frontend-chaos:${GIT_COMMIT_HASH}
+    build: ./frontend
+#    image: ehmeeudosen/frontend-chaos:${GIT_COMMIT_HASH}
     ports:
-      - "80:80"
+      - "3000:80"
 
   backend:
-    image: ehmeeudosen/backend-chaos:${GIT_COMMIT_HASH}
+    build: ./backend
+#    image: ehmeeudosen/backend-chaos:${GIT_COMMIT_HASH}
     ports:
       - "5000:5000"
