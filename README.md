@@ -176,7 +176,7 @@ docker-compose up --build -d
 ```
 Nginx will now serve your frontend and backend over HTTPS.
 
-### Access the app on this link: `https://www.verychaoticpodcast.link`
+### Access the app on this link: [https://www.verychaoticpodcast.link]
 
 ## Conclusion
 
