@@ -176,6 +176,8 @@ docker-compose up --build -d
 ```
 Nginx will now serve your frontend and backend over HTTPS.
 
+### Access the app on this link: `https://www.verychaoticpodcast.link`
+
 ## Conclusion
 
 With these steps, your app will be deployed to an Ubuntu EC2 instance, served through Nginx, and secured with SSL using Let’s Encrypt. The Docker containers will run both the React frontend and Flask backend, with Nginx acting as a reverse proxy.
