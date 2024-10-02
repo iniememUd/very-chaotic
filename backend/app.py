@@ -24,5 +24,7 @@ def contact():
     print(f"Contact form submitted by {name} ({email}): {message}")
     return jsonify({"message": "Contact form submitted successfully!"})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+#if __name__ == '__main__':
+#    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
