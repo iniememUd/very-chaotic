@@ -3,7 +3,6 @@ version: '3'
 services:
   frontend:
     build: ./frontend
-#    image: ehmeeudosen/frontend-chaos:${GIT_COMMIT_HASH}
     ports:
       - "3000:80"
 
